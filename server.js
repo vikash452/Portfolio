@@ -8,6 +8,10 @@ app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/public/html/index.html')
 })
 
+// app.post('/query',(req,res)=>{
+
+// })
+
 app.listen(PORT,()=>{
     console.log('Server started on port 5000')
 })

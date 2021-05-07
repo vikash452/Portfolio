@@ -1,0 +1,16 @@
+nav{
+    background-color: white;
+    color: black;
+}
+
+a{
+    color: black !important;
+}
+
+.intro{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
