@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -14,31 +18,50 @@ a{
 }
 
 #intro{
-    margin-top: 100px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 8vw;
+    margin-right: 9vw;
+    padding-top: 100px;
 }
 
 hr{
-    width: 400px;
+    width: 423px;
     height: 2px;
     background-color: black;
     /* margin-top: 55px; */
     margin-bottom: -5px;
+    margin-left: 0px;
 }
 
 #horizonEffect{
     overflow: hidden;
     width: 25px;
-    height: 20px;
-    line-height: 20px;
+    height: 50px;
+    line-height: 50px;
     white-space: nowrap;
+    font-size: 40px;
+}
+
+.sidenav-overlay{
+    opacity: 0 !important;
 }
 
 @media screen and (max-width:993px){
     #intro{
         flex-direction: column !important;
+        justify-content: center;
+    }
+    #horizonEffect{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #horizonEffect{
+        font-size: 30px;
     }
 }
