@@ -1,16 +1,36 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 nav{
     background-color: white;
     color: black;
+    padding-right: 80px;
+    padding-left: 80px;
 }
 
 a{
     color: black !important;
 }
 
-.intro{
+#intro{
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+hr{
+    width: 400px;
+    height: 2px;
+    background-color: black;
+    /* margin-top: 55px; */
+    margin-bottom: -5px;
+}
+
+@media screen and (max-width:993px){
+    #intro{
+        flex-direction: column !important;
+    }
 }
