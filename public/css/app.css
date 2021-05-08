@@ -29,6 +29,14 @@ hr{
     margin-bottom: -5px;
 }
 
+#horizonEffect{
+    overflow: hidden;
+    width: 25px;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
 @media screen and (max-width:993px){
     #intro{
         flex-direction: column !important;
