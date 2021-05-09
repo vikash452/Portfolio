@@ -4,6 +4,7 @@ html{
 
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 nav{
@@ -17,7 +18,7 @@ a{
     color: black !important;
 }
 
-#intro{
+.commonAligning{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -27,6 +28,8 @@ a{
     margin-right: 9vw;
     padding-top: 100px;
 }
+
+/* .about */
 
 hr{
     width: 423px;
@@ -50,8 +53,13 @@ hr{
     opacity: 0 !important;
 }
 
+.nameDiv{
+    width: 500px;
+    margin-left: 4vw;
+}
+
 @media screen and (max-width:993px){
-    #intro{
+    .commonAligning{
         flex-direction: column !important;
         justify-content: center;
     }
@@ -63,5 +71,9 @@ hr{
 @media screen and (max-width:375px) {
     #horizonEffect{
         font-size: 30px;
+    }
+
+    .nameDiv{
+        margin: auto;
     }
 }
