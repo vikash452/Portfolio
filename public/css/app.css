@@ -56,6 +56,24 @@ hr{
 .nameDiv{
     width: 500px;
     margin-left: 4vw;
+    z-index: 5;
+}
+
+.overlay-intro{
+    height: 600px;
+    width: 600px;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.codingIcon{
+    height: 280px;
+    width: 280px;
+    right: 120px;
+    top: 130px;
+    z-index: 1;
+    position: absolute;
 }
 
 @media screen and (max-width:993px){
@@ -75,6 +93,28 @@ hr{
 
     .nameDiv{
         margin: auto;
+    }
+
+    .codingIcon{
+        position: relative;
+        right: 0;
+    }
+
+    .overlay-intro{
+        width: 400px;
+        height: 400px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .codingIcon{
+        position:relative;
+    }
+
+    .overlay-intro{
+        width: 500px;
+        height: 500px;
     }
 }
 
