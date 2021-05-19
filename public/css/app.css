@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Farro', sans-serif;
     overflow-x: hidden;
 }
 
@@ -60,8 +60,8 @@ hr{
 }
 
 .overlay-intro{
-    height: 600px;
-    width: 600px;
+    height: 622px;
+    width: 720px;
     right: 0;
     top: 0;
     position: absolute;
@@ -70,10 +70,14 @@ hr{
 .codingIcon{
     height: 280px;
     width: 280px;
-    right: 120px;
-    top: 130px;
+    right: 212px;
+    top: 145px;
     z-index: 1;
     position: absolute;
+}
+
+#about{
+    margin-top: 100px;
 }
 
 @media screen and (max-width:993px){
@@ -98,18 +102,20 @@ hr{
     .codingIcon{
         position: relative;
         right: 0;
+        top: 16px;
     }
 
     .overlay-intro{
         width: 400px;
         height: 400px;
-        left: 0;
+        left: 30px;
     }
 }
 
 @media screen and (max-width:900px) {
     .codingIcon{
         position:relative;
+        top: 16px;
     }
 
     .overlay-intro{
@@ -123,7 +129,7 @@ hr{
 }
 
 ::-webkit-scrollbar-track {
-	background-color: rgb(219, 43, 219);
+	background-color: #ccccff;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 }
@@ -131,9 +137,9 @@ hr{
 ::-webkit-scrollbar-thumb {
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	background: rgb(11, 133, 11);
+	background: rgb(184, 113, 250);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: rgb(6, 48, 6);
+	background: rgb(124, 28, 214);
 }

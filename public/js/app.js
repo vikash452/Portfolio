@@ -19,7 +19,7 @@ function rolesPrinter(i)
   var toChange=0;
   var start=true
   var end=false
-  var maxLength=roles[i].length * 20 + 50
+  var maxLength=roles[i].length * 20 + 70
   var myInterval = setInterval(()=>{
       horizontalText.style.width=`${toChange}px`
 
