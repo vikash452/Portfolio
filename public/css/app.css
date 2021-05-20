@@ -80,6 +80,24 @@ hr{
     margin-top: 100px;
 }
 
+#intro{
+    margin-bottom: 200px;
+}
+
+.aboutMeIntroduction{
+    color: lightslategray;
+    font-size: large;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.overlay-skills{
+    height: 600px;
+    width: 480px;
+    position: absolute;
+    left: 0;
+    top: 587px;
+}
+
 @media screen and (max-width:993px){
     .commonAligning{
         flex-direction: column !important;
