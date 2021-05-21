@@ -98,6 +98,26 @@ hr{
     top: 587px;
 }
 
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-svg-images{
+    height: 100px;
+    width: 215px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border: 1px solid;
+    border-color: rgb(230,230,230);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
 @media screen and (max-width:993px){
     .commonAligning{
         flex-direction: column !important;
@@ -127,6 +147,24 @@ hr{
         width: 400px;
         height: 400px;
         left: 30px;
+    }
+
+    .skills-svg-images{
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 130px !important;
+    }
+}
+
+@media screen and (max-width:695px) {
+    .skills-svg-images{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 1px;
+        margin-right: 1px;
+        width: 170px;
     }
 }
 
