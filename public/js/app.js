@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function rolesPrinter(i)
 {
-  // console.log(i) 
   var horizontalText=document.getElementById('horizonEffect')
   horizontalText.innerText=roles[i];
   var toChange=0;
