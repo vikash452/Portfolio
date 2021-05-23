@@ -136,6 +136,10 @@ hr{
     padding-right: 10%;
 }
 
+.card{
+    font-weight: 200;
+}
+
 @media screen and (max-width:993px){
     .commonAligning{
         flex-direction: column !important;
