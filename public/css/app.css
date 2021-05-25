@@ -136,6 +136,10 @@ hr{
     padding-right: 10%;
 }
 
+.card-content{
+    height: 300px;
+}
+
 .card{
     font-weight: 200;
 }
