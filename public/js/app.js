@@ -78,3 +78,16 @@ x.addListener(myFunction) // Attach listener function on state changes
 </html>
 
 */
+
+function sendMessage()
+{
+  var name=document.getElementById('senderName')
+  var email=document.getElementById('senderEmail')
+  var message=document.getElementById('message')
+  console.log(name)
+  if(name.innerText.length == 0 || email.innerText.length == 0 || message.innerText.length == 0)
+  {
+    name.placeholder = 'PLEASE ENTER ALL THE FIELDS'
+  }
+
+}
