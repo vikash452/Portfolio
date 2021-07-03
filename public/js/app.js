@@ -84,10 +84,21 @@ function sendMessage()
   var name=document.getElementById('senderName')
   var email=document.getElementById('senderEmail')
   var message=document.getElementById('message')
-  console.log(name)
-  if(name.innerText.length == 0 || email.innerText.length == 0 || message.innerText.length == 0)
+  // console.log(name.value)
+  if(name.value.length == 0)
   {
-    name.placeholder = 'PLEASE ENTER ALL THE FIELDS'
+    name.placeholder = 'PLEASE ENTER YOUR NAME'
+    return;
+  }
+  if(email.value.length == 0)
+  {
+    email.placeholder = 'PLEASE ENTER YOUR EMAIL'
+    return;
+  }
+  if(message.value.length == 0)
+  {
+    message.placeholder = 'PLEASE ENTER YOUR MESSAGE'
+    return;
   }
 
 }
