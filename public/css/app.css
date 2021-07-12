@@ -148,7 +148,15 @@ hr{
 {
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
+    width: 30rem;
     /* padding-top: 1rem; */
+}
+
+.row-custom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
 
 @media screen and (max-width:993px){
@@ -158,6 +166,16 @@ hr{
     }
     #horizonEffect{
         font-size: 35px;
+    }
+
+    .row-custom{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contactDetails{
+        margin-top: 5rem;
     }
 }
 
