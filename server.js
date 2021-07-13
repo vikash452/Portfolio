@@ -1,14 +1,19 @@
+const bodyParser = require('body-parser')
 const express=require('express')
 const app=express()
-const PORT=5000
+const PORT=process.env.PORT || 5000
+const nodemailer=require("nodemailer")
+require('dotenv').config();
 
+app.use(bodyParser.json());
 app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/public/html/index.html')
 })
 
-app.post('/contact',(req,res)=>{
+app.post('/sendQuery',(req,res)=>{
+  console.log(req.body)
     var message=req.body.message;
     var senderEmail=req.body.senderEmail;
     var name=req.body.name;
@@ -38,9 +43,10 @@ app.post('/contact',(req,res)=>{
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
           console.log(error);
+          return res.json({success:false,message:error})
         } else {
           console.log("Email sent: " + info.response);
-        return res.json({message:"message sent"})
+        return res.json({success:true,message:"message sent"})
         }
     });
 

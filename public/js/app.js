@@ -100,5 +100,32 @@ function sendMessage()
     message.placeholder = 'PLEASE ENTER YOUR MESSAGE'
     return;
   }
+  
+  fetch('/sendQuery',{
+    method:'POST',
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+      message:message.value,
+      senderEmail:email.value,
+      name:name.value
+    })
+  })
+  .then(res=>res.json())
+  .then((data) => {
+    
+    if(data.success)
+    {
+      M.toast({html: 'Message sent successfully', displayLength:1000}) 
+    }
+    else{
+      console.log(data);
+    }
+    
+  })
+  .catch((err)=>{
+    console.log(err);
+  })
 
 }
